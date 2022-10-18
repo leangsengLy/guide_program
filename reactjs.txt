@@ -1,0 +1,42 @@
+/*
+|-----------------------------------------------------
+| React Js
+|-----------------------------------------------------
+*/
+#JSX is a syntax extension to JavaScript, and it is recommended to be used with React.
+
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+ <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+ <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+ 
+ #display on browser
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+    </head>
+    <body>
+        
+        <div id="container"></div>
+        
+        <script type="text/babel">
+        ReactDOM.render(
+          <h1>Hello, React!</h1>,
+          document.getElementById('container')
+        )
+        </script>
+    </body>
+</html>
+
+
+#Facebook has created a handy tool called #Create React App that makes it easy to setup a React project with just a simple command!
+#To get started, make sure you have a recent version of #Node installed on your machine.
+	Command interminal
+	#npx create-react-app my-app
+	#cd my-app
+	#npm start
+
+This will install all the required dependencies, configure and start the project on #localhost:3000.
